@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+		$(document).ready(function(){
+		    $(".move2px").click(function(){
+		        $(".car").animate({
+		        	left: '+=10px'
+		        });
+		    });
+		    $(".1step").click(function(){
+		    	$(".car").animate({
+		    		left : '+=50px'
+		    	});
+		    });
+		    $(".2step").click(function(){
+		    	$(".car").animate({
+		    		left : '+=100px'
+		    	});
+		    });
+
+		    $(".-move2px").click(function(){
+		        $(".car").animate({
+		        	left: '-=10px'
+		        });
+		    });
+		    $(".-1step").click(function(){
+		    	$(".car").animate({
+		    		left : '-=50px'
+		    	});
+		    });
+		    $(".-2step").click(function(){
+		    	$(".car").animate({
+		    		left : '-=100px'
+		    	});
+		    });
+
+
+		});
+	</script> 
+</head>
+<body>
+	
+	<div style="display: inline-block;">
+		<button class="move2px">Move 10 px</button>
+		<button class="1step">Move 1 step</button>
+		<button class="2step">Move 2 step</button>
+
+		<button class="-move2px">Back 10 px</button>
+		<button class="-1step">Back 1 step</button>
+		<button class="-2step">Back 2 step</button>
+	</div>
+	<div style="position: absolute;" class="car">
+		<img src="http://www.free-icons-download.net/images/car-icon-13955.png">
+	</div>
+		
+		
+	
+	
+	
+	
+</body>
+</html>

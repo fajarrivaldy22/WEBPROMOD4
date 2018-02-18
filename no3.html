@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".data").hide();
+  $(".int-btn").click( function() {
+    var value = $(this).val().toLowerCase();
+    $(".data div").filter(function() {
+    	$(".data div").load("animal.txt")
+    	$(".data").show();
+      	$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<h1>Terimakasih TP sangat membantu saya dalam menghemat uang</h1>
+
+<div class="BTN" style="display: inline-block;">
+	<button class="int-btn" value="A">A</button>
+	<button class="int-btn" value="B">B</button>
+	<button class="int-btn" value="C">C</button>
+	<button class="int-btn" value="D">D</button>
+	<button class="int-btn" value="E">E</button>
+	<button class="int-btn" value="F">F</button>
+	<button class="int-btn" value="G">G</button>
+	<button class="int-btn" value="H">H</button>
+	<button class="int-btn" value="I">I</button>
+	<button class="int-btn" value="J">J</button>
+	<button class="int-btn" value="K">K</button>
+	<button class="int-btn" value="L">L</button>
+	<button class="int-btn" value="M">M</button>
+	<button class="int-btn" value="N">N</button>
+	<button class="int-btn" value="O">O</button>
+	<button class="int-btn" value="P">P</button>
+	<button class="int-btn" value="Q">Q</button>
+	<button class="int-btn" value="R">R</button>
+	<button class="int-btn" value="S">S</button>
+	<button class="int-btn" value="T">T</button>
+	<button class="int-btn" value="U">U</button>
+	<button class="int-btn" value="V">V</button>
+	<button class="int-btn" value="W">W</button>
+	<button class="int-btn" value="Y">X</button>
+	<button class="int-btn" value="Z">Z</button>		
+</div>
+
+<div class="data">
+	<div>A</div>
+	<div>A</div>
+	<div>A</div>
+	<div>A</div>
+	<div>Ab</div>
+	<div>Ab</div>
+	<div>Ab</div>
+	<div>Ab</div>
+	<div>Ab</div>
+	<div>Ab</div>
+	<div>Ab</div>
+	<div>Ab</div>
+	<div>Ab</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>C</div>
+	<div>D</div>
+	<div>D</div>	
+	<div>D</div>
+	<div>D</div>
+	<div>D</div>
+	<div>D</div>
+	<div>D</div>
+	<div>D</div>
+	<div>D</div>
+	<div>D</div>
+	<div>E</div>
+	<div>E</div>
+	<div>E</div>
+	<div>E</div>
+	<div>E</div>
+	<div>E</div>
+	<div>E</div>
+	<div>E</div>
+	<div>E</div>
+	<div>E</div>
+	<div>E</div>
+	<div>F</div>
+	<div>F</div><div>F</div>
+
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>F</div>
+	<div>G</div>
+	<div>G</div>
+	<div>G</div>
+	<div>G</div>
+	<div>G</div>
+	<div>G</div>
+	<div>H</div>
+	<div>H</div>
+	<div>H</div>
+	<div>H</div>
+	<div>H</div>
+	<div>H</div>
+
+</div>
+    
+</body>
+</html>

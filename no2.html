@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		td{
+			border: 1px solid black;
+			width: 50px;
+			margin: 5px;
+			margin-left: 3px;
+		}
+		.form-input{
+			padding: 20px 20px;
+			border: 2px solid black;
+			background: lightyellow;
+			width: 300px;
+		}
+		.dlt{
+			background: blue;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+		$(document).ready(function(){
+			
+			$(".submit").click(function(){
+				var r = '<input class="dlt" type="button" value="new button"/>'
+        
+				$(".target").prepend("<tr>" +"<td>"+ $(".nama").val()+"</td>"+ "<td>"+ $(".nim").val()+"</td>"+ "<td>"+ $(".kelas").val()+"</td>"+ "<td>"+ $(".gender").val()+ "<td>"+ r+ "</td>" + "</tr>");
+			});
+			$(r).click(function(){
+				alert("hula")
+				$(".target").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+		
+		<div class="form-input">
+			Nama : 
+			<input type="text" name="nama" class="nama"><br>
+			NIM : 
+			<input type="text" name="nim" class="nim"><br>
+			Kelas :
+			<input type="text" name="kelas" class="kelas"><br>
+			<input type="radio" name="gender" value="male" class="gender"> Male<br>
+	  		<input type="radio" name="gender" value="female" class="gender">Female<br>
+			<button type="submit" class="submit">Save</button>
+		</div>
+		
+	<table style="border: 1px solid black" class="target">
+		<tr >
+			<th>Name</th>
+			<th>NIM</th>
+			<th>Kelas</th>
+			<th>Jenis Kelasmin</th>
+			<th>Action</th>
+		</tr>
+	</table>
+	
+
+
+</body>
+</html>
